@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ActivityA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity A"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/selectInA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ActivityA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Select the activity in which you want to move?"
+        android:textColor="@color/black"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/selectInA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Activity B"
+        android:textSize="20sp"
+
+
+        >
+
+    </Button>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/selectInA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Activity C"
+        android:textSize="20sp">
+
+    </Button>
+
+</RelativeLayout>
+
